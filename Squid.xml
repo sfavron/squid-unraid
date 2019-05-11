@@ -25,11 +25,7 @@
       </Port>
     </Publish>
   </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/squid</HostDir>
-      <ContainerDir>/etc/squid</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
+  
+  <Config Type="Port" Name="Proxy Port" Target="3128" Default="3128" Mode="tcp" Display="show" Required="true"
+    Description="Squid's proxy port.">3128</Config>
 </Container>
