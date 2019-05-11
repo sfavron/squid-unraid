@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Date>2019-05-11</Date>
+  <Beta>False</Beta>
+  <Name>Squid</Name>
+  <Project>http://www.squid-cache.org/</Project>
+  <Overview>
+    Squid: Optimising Web Delivery
+  </Overview>
+  <Description>
+    Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more. It reduces bandwidth and improves response times by caching and reusing frequently-requested web pages. Squid has extensive access controls and makes a great server accelerator. It runs on most available operating systems, including Windows and is licensed under the GNU GPL. 
+  </Description>
+  <Registry>https://hub.docker.com/r/datadog/squid</Registry>
+  <GitHub>https://github.com/squid-cache/squid</GitHub>
+  <Repository>datadog/squid</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3128</HostPort>
+        <ContainerPort>3128</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/squid</HostDir>
+      <ContainerDir>/etc/squid</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Network Default="bridge">bridge</Network>
+</Container>
