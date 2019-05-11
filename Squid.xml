@@ -8,14 +8,13 @@
     Squid: Optimising Web Delivery
   </Overview>
   <Description>
-    Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more. It reduces bandwidth and improves response times by caching and reusing frequently-requested web pages. Squid has extensive access controls and makes a great server accelerator. It runs on most available operating systems, including Windows and is licensed under the GNU GPL. 
+    Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more.
   </Description>
   <Registry>https://hub.docker.com/r/datadog/squid</Registry>
   <GitHub>https://github.com/squid-cache/squid</GitHub>
   <Repository>datadog/squid</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Environment/>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -33,5 +32,4 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Network Default="bridge">bridge</Network>
 </Container>
